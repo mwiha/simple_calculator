@@ -2,13 +2,13 @@ h1 {
     text-align: center;
   }
 
-.container{
+#container{
 	width: 1000px;
 	height: 550px;
 	margin: 20px auto;
-}	
+}
 
-.calculator{
+#calculator{
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
@@ -16,23 +16,26 @@ h1 {
 	top: 20px;
 	position: relative;
 	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.result{
+#result{
 	height: 120px;
     background-color: #bbb;
 }
 
-.history{
+#history{
 	text-align: right;
 	height: 20px;
 	margin: 0 20px;
 	padding-top: 20px;
 	font-size: 15px;
-	color: #e03939;
+	color: black;
 }
 
-.output{
+#keyboard{
+	height: 400px;     
+}
+
+#output{
 	text-align: right;
 	height: 60px;
 	margin: 10px 20px;
@@ -59,4 +62,4 @@ h1 {
 } 
 .operator:focus, .number:focus, .empty:focus{
 	outline: 0;
-}
+}  

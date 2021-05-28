@@ -29,16 +29,9 @@ function reverseNumberFormat(num){
 var operator = document.getElementsByClassName("operator");
 for(var i =0;i<operator.length;i++){
 	operator[i].addEventListener('click',function(){
-		if(this.id=="clear"){
+		if(this.id=="backspace"){
 			printHistory("");
 			printOutput("");
-		}
-		else if(this.id=="backspace"){
-			var output=reverseNumberFormat(getOutput()).toString();
-			if(output){//if output has a value
-				output= output.substr(0,output.length-1);
-				printOutput(output);
-			}
 		}
 		else{
 			var output=getOutput();
@@ -64,5 +57,15 @@ for(var i =0;i<operator.length;i++){
 			}
 		}
 		
+	});
+}
+var number = document.getElementsByClassName("number");
+for(var i =0;i<number.length;i++){
+	number[i].addEventListener('click',function(){
+		var output=reverseNumberFormat(getOutput());
+		if(output!=NaN){ //if output is a number
+			output=output+this.id;
+			printOutput(output);
+		}
 	});
 }
