@@ -1,7 +1,10 @@
+h1 {
+    text-align: center;
+  }
+
 .container{
 	width: 1000px;
 	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
 	margin: 20px auto;
 }	
 
@@ -17,6 +20,7 @@
 }
 .result{
 	height: 120px;
+    background-color: #bbb;
 }
 
 .history{
@@ -25,7 +29,7 @@
 	margin: 0 20px;
 	padding-top: 20px;
 	font-size: 15px;
-	color: #919191;
+	color: #e03939;
 }
 
 .output{
